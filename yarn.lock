@@ -1258,7 +1258,12 @@
     "tslib" "^2.1.0"
     "xml2js" "^0.4.23"
 
-"@capacitor/core@^3.6.0":
+"@capacitor/clipboard@^1.0.8":
+  "integrity" "sha512-q8Fb5imJHQtYA+1sGqqigCrXmf0R1ZGXf/XMRtTznQqm0jhiayUusQN63Rv1YtKIPTJeeVJqy/i6rv72d4GH0Q=="
+  "resolved" "https://registry.npmjs.org/@capacitor/clipboard/-/clipboard-1.0.8.tgz"
+  "version" "1.0.8"
+
+"@capacitor/core@^3.0.0", "@capacitor/core@^3.6.0":
   "integrity" "sha512-F94ozABHXxq1xMcNGMnOVP73WZDWYR1PrJEfVfl9Ja0BXGEJURIxmHBc842OX3rrt3+g0ELHyhX9LTH16eeonw=="
   "resolved" "https://registry.npmjs.org/@capacitor/core/-/core-3.6.0.tgz"
   "version" "3.6.0"

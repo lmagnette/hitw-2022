@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Joke } from '../../models/joke';
-import { JokesService } from '../../services/jokes.service';
+import { Clipboard } from '@capacitor/clipboard';
 
 @Component({
   selector: 'app-joke-card',
@@ -23,4 +23,9 @@ export class JokeCardComponent implements OnInit {
     this.like.emit(this.joke);
   }
 
+  async copy() {
+    await Clipboard.write( {
+      string: this.joke.text
+    } );
+  }
 }
