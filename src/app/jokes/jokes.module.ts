@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -21,15 +22,16 @@ import { MatInputModule } from '@angular/material/input';
     JokeFormComponent,
     JokeCardComponent
   ],
-  imports: [
-    CommonModule,
-    JokeRoutingModule,
-    HttpClientModule,
-    MatCardModule,
-    MatButtonModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    MatInputModule
-  ]
+    imports: [
+        CommonModule,
+        JokeRoutingModule,
+        HttpClientModule,
+        MatCardModule,
+        MatButtonModule,
+        MatIconModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        IonicModule
+    ]
 })
 export class JokesModule { }
