@@ -25,4 +25,8 @@ export class JokesService {
   updateJoke(joke:Joke):Observable<Joke>{
     return this.http.put<Joke>(this.apiUrl,joke);
   }
+
+  createJoke(joke:Partial<Joke>):Observable<Joke>{
+    return this.http.post<Joke>(this.apiUrl,joke);
+  }
 }

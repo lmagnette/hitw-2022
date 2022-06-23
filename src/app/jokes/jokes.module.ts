@@ -9,6 +9,8 @@ import { JokeCardComponent } from './components/joke-card/joke-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -26,6 +28,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class JokesModule { }

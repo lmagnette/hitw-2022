@@ -20,6 +20,9 @@
   </div>
 </nav>
 <router-outlet></router-outlet>
-<button class="floating-button" mat-fab color="accent" aria-label="Add a new joke">
-  <mat-icon>add</mat-icon>
-</button>
+<div class="floating-button">
+  <button mat-fab color="accent" aria-label="Add a new joke" [routerLink]="'/jokes/new'">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+

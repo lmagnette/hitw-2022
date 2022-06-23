@@ -14,7 +14,7 @@ const routes: Routes = [
     component: JokesComponent
   },
   {
-    path: 'new ',
+    path: 'new',
     component: JokeFormComponent
   },
   {
