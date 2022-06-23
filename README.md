@@ -1,6 +1,8 @@
 # Hitw2022
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+Demo project realise for a presentation during the [Hack in the Woods 2022](https://www.hackinthewoods.be/). This presentation has for goal to demonstrate how to convert a regular angular app into a mobile native app using capacitor.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
 ## Development server
 
