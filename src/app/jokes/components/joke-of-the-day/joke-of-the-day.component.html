@@ -1,1 +1,6 @@
-<p>joke-of-the-day works!</p>
+<div class="row justify-content-center my-3">
+  <div class="col-xs-12 col-md-6 col-lg-3">
+    <app-joke-card [joke]="joke" (like)="onLike($event)"></app-joke-card>
+  </div>
+</div>
+

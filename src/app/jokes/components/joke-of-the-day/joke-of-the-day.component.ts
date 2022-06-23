@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JokesService } from '../../services/jokes.service';
+import { Joke } from '../../models/joke';
 
 @Component({
   selector: 'app-joke-of-the-day',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokeOfTheDayComponent implements OnInit {
 
-  constructor() { }
+  joke: Joke = {id:-1,author:'', text:'',like:0};
 
-  ngOnInit(): void {
+  constructor( private jokeService: JokesService ) {
   }
 
+  ngOnInit(): void {
+    this.loadJoke();
+  }
+
+  private loadJoke() {
+    this.jokeService.getJokeOfTheDay().subscribe(
+      data => this.joke = data
+    );
+  }
+
+  onLike(updatedJoke:Joke) {
+
+    this.jokeService.updateJoke({...updatedJoke, like:updatedJoke.like+1}).subscribe(
+      () =>  this.loadJoke()
+    )
+  }
 }
