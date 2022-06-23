@@ -25,7 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
     HttpClientModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class JokesModule { }
