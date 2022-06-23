@@ -20,28 +20,32 @@ export class InMemoryDataService implements InMemoryDbService {
         id:1,
         author:'Carambar',
         text:'Quelle est la femelle du hamster ?' +
-          'L’Amsterdam'
+          'L’Amsterdam',
+        like:0
       },
 
       {
-        id:1,
+        id:2,
         author:'Carambar',
         text:'Que dit un oignon quand il se cogne ?' +
-          'Aïe'
+          'Aïe',
+        like:0
       },
 
       {
-        id:1,
+        id:3,
         author:'Carambar',
         text:'Quel est l\'animal le plus heureux ?' +
-          'Le hibou, parce que sa femme est chouette.'
+          'Le hibou, parce que sa femme est chouette.',
+        like:0
       },
 
       {
-        id:1,
+        id:4,
         author:'Carambar',
         text:'Quelle est le fruit préféré de l\'homme ?' +
-          'L’ananas'
+          'L’ananas',
+        like:0
       }
     ];
   }

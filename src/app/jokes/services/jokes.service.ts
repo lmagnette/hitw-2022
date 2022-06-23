@@ -21,4 +21,8 @@ export class JokesService {
   getJokeOfTheDay():Observable<Joke>{
     return this.http.get<Joke>( `${this.apiUrl}/3` );
   }
+
+  updateJoke(joke:Joke):Observable<Joke>{
+    return this.http.put<Joke>(this.apiUrl,joke);
+  }
 }

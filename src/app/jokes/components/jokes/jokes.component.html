@@ -1,3 +1,5 @@
-<p>jokes works!</p>
-
-<pre>{{jokes  | json}}</pre>
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-lg-3 my-1" *ngFor="let joke of jokes">
+    <app-joke-card [joke]="joke" (like)="onLike($event)"></app-joke-card>
+  </div>
+</div>

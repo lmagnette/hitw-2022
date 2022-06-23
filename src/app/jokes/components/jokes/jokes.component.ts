@@ -14,7 +14,17 @@ export class JokesComponent implements OnInit {
   constructor(private jokeService:JokesService) { }
 
   ngOnInit(): void {
-    this.jokeService.getAll().subscribe(data => this.jokes = data );
+    this.loadAllJokes();
   }
 
+  onLike(updatedJoke:Joke) {
+
+    this.jokeService.updateJoke({...updatedJoke, like:updatedJoke.like+1}).subscribe(
+        () =>  this.loadAllJokes()
+      )
+  }
+
+  private loadAllJokes() {
+    this.jokeService.getAll().subscribe(data => this.jokes = data );
+  }
 }

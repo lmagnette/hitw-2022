@@ -5,6 +5,10 @@ import { JokesComponent } from './components/jokes/jokes.component';
 import { JokeRoutingModule } from './joke-routing.module';
 import { JokeFormComponent } from './components/joke-form/joke-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { JokeCardComponent } from './components/joke-card/joke-card.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -12,12 +16,16 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     JokeOfTheDayComponent,
     JokesComponent,
-    JokeFormComponent
+    JokeFormComponent,
+    JokeCardComponent
   ],
   imports: [
     CommonModule,
     JokeRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class JokesModule { }
