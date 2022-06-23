@@ -5,9 +5,15 @@
     "ng": "ng",
     "start": "ng serve",
     "start-pwa": "http-server-spa dist/hitw-2022/ index.html 4200",
+    "start-open": "ng serve -o --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+
+
+
+    "update-config": "npx cap copy",
+    "sync": "ng build && npx cap sync",
     "ios": "npx cap open ios",
     "android": "npx cap open android"
   },
