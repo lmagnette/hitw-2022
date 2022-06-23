@@ -1,6 +1,6 @@
 export interface Joke {
   id:number;
-  auhtor:string;
+  author:string;
   text:string;
 }
 

@@ -15,6 +15,34 @@ export class InMemoryDataService implements InMemoryDbService {
   }
 
   createDbJoke():Joke[]{
-    return [];
+    return [
+      {
+        id:1,
+        author:'Carambar',
+        text:'Quelle est la femelle du hamster ?' +
+          'L’Amsterdam'
+      },
+
+      {
+        id:1,
+        author:'Carambar',
+        text:'Que dit un oignon quand il se cogne ?' +
+          'Aïe'
+      },
+
+      {
+        id:1,
+        author:'Carambar',
+        text:'Quel est l\'animal le plus heureux ?' +
+          'Le hibou, parce que sa femme est chouette.'
+      },
+
+      {
+        id:1,
+        author:'Carambar',
+        text:'Quelle est le fruit préféré de l\'homme ?' +
+          'L’ananas'
+      }
+    ];
   }
 }

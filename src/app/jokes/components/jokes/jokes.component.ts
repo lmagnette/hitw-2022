@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JokesService } from '../../services/jokes.service';
+import { Joke } from '../../models/joke';
 
 @Component({
   selector: 'app-jokes',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokesComponent implements OnInit {
 
-  constructor() { }
+  jokes:Joke[]=[]
+
+  constructor(private jokeService:JokesService) { }
 
   ngOnInit(): void {
+    this.jokeService.getAll().subscribe(data => this.jokes = data );
   }
 
 }

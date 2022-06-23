@@ -4,6 +4,7 @@ import { JokeOfTheDayComponent } from './components/joke-of-the-day/joke-of-the-
 import { JokesComponent } from './components/jokes/jokes.component';
 import { JokeRoutingModule } from './joke-routing.module';
 import { JokeFormComponent } from './components/joke-form/joke-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -15,7 +16,8 @@ import { JokeFormComponent } from './components/joke-form/joke-form.component';
   ],
   imports: [
     CommonModule,
-    JokeRoutingModule
+    JokeRoutingModule,
+    HttpClientModule
   ]
 })
 export class JokesModule { }
