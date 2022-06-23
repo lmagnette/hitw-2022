@@ -11,6 +11,7 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { environment } from '../environments/environment';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
