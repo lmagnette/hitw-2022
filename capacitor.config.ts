@@ -5,10 +5,10 @@ const config: CapacitorConfig = {
   appName: 'hitw-2022',
   webDir: 'dist/hitw-2022',
   bundledWebRuntime: false,
-  // server:{
-  //   url: '192.168.1.5:4200',
-  //   cleartext:true
-  // }
+  /* server:{
+     url: 'http://192.168.21.193:4200',
+     cleartext:true
+   }*/
 };
 
 export default config;
